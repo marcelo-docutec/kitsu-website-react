@@ -8,7 +8,7 @@ export const useGetAnimes = url => {
   const fetchUrl = async () => {
     const response = await axiosInstance.get( url );
     setAnimes(response);
-    setLoading(false);
+    //setLoading(false);
   };
 
   useEffect( () => {
