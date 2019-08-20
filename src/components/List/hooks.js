@@ -1,18 +1,18 @@
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 import axiosInstance from "../../core/axiosconfig";
 
 export const useGetAnimes = url => {
-  const [animes,setAnimes] = useState([]);
-  const [loading,setLoading] = useState(true);
+  const [animes, setAnimes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchUrl = async () => {
-    const response = await axiosInstance.get( url );
+    const response = await axiosInstance.get(url);
     setAnimes(response);
     //setLoading(false);
   };
 
-  useEffect( () => {
+  useEffect(() => {
     fetchUrl()
-  }, [] );
+  }, []);
   return [animes, loading];
 };
