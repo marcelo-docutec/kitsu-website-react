@@ -8,12 +8,8 @@ export const XZSearchInput = () => {
     const SearchFrame = useStyled(({styled}) => styled.div`
         display: flex;
         background-color: white;
-        //height: 35px;
-        //width: 200px;
-        //border: none;
         border-radius: 11px;
         padding: 2px 10px;
-        //margin-right: 50px;
         align-items: center;
         border: none;
 `);
