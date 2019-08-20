@@ -5,7 +5,7 @@ import {faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export const XZSearchInput = () => {
 
-    const SearchFrame = useStyled(({styled}) => styled.div`
+  const SearchFrame = useStyled(({styled}) => styled.div`
         display: flex;
         background-color: white;
         //height: 35px;
@@ -18,7 +18,7 @@ export const XZSearchInput = () => {
         border: none;
 `);
 
-    const InputXZ = useStyled(({styled}) => styled.input`
+  const InputXZ = useStyled(({styled}) => styled.input`
         outline: none;
         border: none;
         min-width: 40px;
@@ -29,10 +29,10 @@ export const XZSearchInput = () => {
         }
 `);
 
-    return (
-        <SearchFrame>
-            <InputXZ/>
-            <FontAwesomeIcon style={{color: 'black'}} icon={faSearch} size={'lg'}/>
-        </SearchFrame>
-    );
+  return (
+    <SearchFrame>
+      <InputXZ/>
+      <FontAwesomeIcon style={{color: 'black'}} icon={faSearch} size={'lg'}/>
+    </SearchFrame>
+  );
 };
